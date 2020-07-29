@@ -14,7 +14,6 @@ public class Meetup extends PanacheEntity implements Serializable {
 
 	private static final long serialVersionUID = -3838072291641777744L;
 
-	@Id
 	private Long id;
 	@Column
 	@NotBlank
