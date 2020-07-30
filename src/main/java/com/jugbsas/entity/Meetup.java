@@ -1,11 +1,13 @@
-package com.jugbsas.controller;
+package com.jugbsas.entity;
 
 import java.io.Serializable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
+
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
 
@@ -14,7 +16,6 @@ public class Meetup extends PanacheEntity implements Serializable {
 
 	private static final long serialVersionUID = -3838072291641777744L;
 
-	private Long id;
 	@Column
 	@NotBlank
 	private String meeetingName;

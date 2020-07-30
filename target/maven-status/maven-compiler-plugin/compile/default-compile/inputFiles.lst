@@ -1,4 +1,4 @@
-C:\Users\LVSMi\OneDrive\Escritorio\Java_Node\JavaBsAs\charlas\Quarkus\proyecto-quarkus\quarkus-example\src\main\java\com\jugbsas\controller\GreetingService.java
-C:\Users\LVSMi\OneDrive\Escritorio\Java_Node\JavaBsAs\charlas\Quarkus\proyecto-quarkus\quarkus-example\src\main\java\com\jugbsas\controller\GreetingResource.java
-C:\Users\LVSMi\OneDrive\Escritorio\Java_Node\JavaBsAs\charlas\Quarkus\proyecto-quarkus\quarkus-example\src\main\java\com\jugbsas\controller\Meetup.java
-C:\Users\LVSMi\OneDrive\Escritorio\Java_Node\JavaBsAs\charlas\Quarkus\proyecto-quarkus\quarkus-example\src\main\java\com\jugbsas\manager\MeetupDAO.java
+/home/duccinator/Documents/work/git-jug-bsas/quarkus-example/src/main/java/com/jugbsas/entity/Meetup.java
+/home/duccinator/Documents/work/git-jug-bsas/quarkus-example/src/main/java/com/jugbsas/manager/MeetupDAO.java
+/home/duccinator/Documents/work/git-jug-bsas/quarkus-example/src/main/java/com/jugbsas/controller/GreetingService.java
+/home/duccinator/Documents/work/git-jug-bsas/quarkus-example/src/main/java/com/jugbsas/controller/GreetingResource.java

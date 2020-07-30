@@ -1,0 +1,5 @@
+com/jugbsas/controller/GreetingService.class
+META-INF/panache-archive.marker
+com/jugbsas/controller/GreetingResource.class
+com/jugbsas/entity/Meetup.class
+com/jugbsas/manager/MeetupDAO.class

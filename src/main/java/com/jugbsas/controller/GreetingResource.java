@@ -3,21 +3,22 @@ package com.jugbsas.controller;
 import java.util.List;
 
 import javax.inject.Inject;
+import javax.transaction.Transactional;
 import javax.validation.Valid;
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
-import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import org.jboss.logging.Logger;
 
+import com.jugbsas.entity.Meetup;
 import com.jugbsas.manager.MeetupDAO;
 
-@Path("/hello")
+@Path("/")
 public class GreetingResource {
 
 	private Logger logger = Logger.getLogger(GreetingResource.class);
@@ -30,6 +31,7 @@ public class GreetingResource {
 	
     @GET
     @Produces(MediaType.TEXT_PLAIN)
+    @Path("/hello")
     public String hello() {
         return greetingService.getMessage();
     }
@@ -37,6 +39,7 @@ public class GreetingResource {
     @POST
     @Path("/meetup")
     @Consumes(MediaType.APPLICATION_JSON)
+    @Transactional
     public Response meetup(@Valid Meetup meetup) {
     	logger.info(meetup);
     	//meetupDAO.create(meetup);
@@ -46,7 +49,6 @@ public class GreetingResource {
     
     @GET
     @Path("/meetup")
-    @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public List<Meetup> meetup() {
     	return Meetup.findAll().list();

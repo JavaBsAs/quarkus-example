@@ -5,7 +5,7 @@ import java.util.List;
 import javax.enterprise.context.ApplicationScoped;
 import javax.transaction.Transactional;
 
-import com.jugbsas.controller.Meetup;
+import com.jugbsas.entity.Meetup;
 
 import io.quarkus.hibernate.orm.panache.PanacheRepository;
 
